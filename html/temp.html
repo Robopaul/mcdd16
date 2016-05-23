@@ -33,8 +33,8 @@
 <script src="http://pubnub.github.io/eon/v/eon/0.0.10/eon.js"></script>
 <script>
 var pubnub = PUBNUB.init({
-  publish_key: 'pub-c-788fbf88-25a7-4438-9e93-aa552524a68d',
-  subscribe_key: 'sub-c-d9cd0cde-0ee0-11e6-a8fd-02ee2ddab7fe'
+  publish_key: 'pub-c-Publish-Key',
+  subscribe_key: 'sub-c-Subscribe-Key'
 });
 var channel = 'temperature-ds18b20';
 eon.chart({
@@ -51,7 +51,7 @@ eon.chart({
       x: {
         type: 'timeseries',
         tick: {
-          format: '%H:%m:%S',
+          format: '%H:%M:%S',
           fit: true
         },
         label: {
